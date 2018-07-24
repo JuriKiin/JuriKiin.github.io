@@ -1,0 +1,118 @@
+#dataModal{
+    background-color: beige;
+    position:absolute;
+    left:-500px;
+    top:-500px;
+    z-index: 2;
+    width:auto;
+    height:75px;
+    border: 1px solid black;
+    padding:0 5px;
+}
+rect{
+    border:none;
+}
+rect:hover{
+    color:red;
+}
+body{
+    background-color: #03A866;
+    margin:0;
+    padding:0;
+    font-family: 'Lato', sans-serif;
+}
+canvas{
+    background-color: white;
+    border:1px solid black;
+    margin: 0 12.5%;
+}
+#graphTitle{
+    color:#FFFFFF;
+}
+
+
+/** GENERAL STYLE FOR SITE **/
+.header{
+    z-index: 2;
+    font-size: 40pt;
+    font-family: 'Work Sans', sans-serif;
+    padding: 1% 2%;
+    color:white;
+    background-color: #00171F;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#moto{
+    font-size: 15pt;
+    color: #EF233C;
+}
+.graph{
+    margin-top:7.5%;
+}
+#labelX{
+    margin-top:5px;
+    font-size: 15pt;
+    text-align: center;
+}
+#labelY{
+    position: absolute;
+    left: 5%;
+    top:45%;
+}
+#control-options{
+    width:100%;
+}
+.controls{
+    background-color: #353535;
+    color:white;
+    margin: 0 5%;
+    margin-top:1%;
+    padding-bottom:1%;
+}
+#control-buttons{
+    float:right;
+    margin-right:1%;
+    margin-top:1%;
+}
+button{
+    border: 1px solid white;
+    background-color: transparent;
+    color:white;
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-size: 10pt;
+    width:150px;
+    float:right;
+    margin-right:2%;
+    transition:all .25s ease-in-out;
+}
+h2{
+    margin:0;
+    padding:5px 5px 5px 5px;
+    font-family: 'Work Sans', sans-serif;
+}
+tr{
+    width:10%;
+}
+input{
+    float:right;
+    font-size: 15pt;
+    border-radius: 2px;
+    border:none;
+}
+.jscolor{
+    z-index: 5;
+}
+
+button#addButton:hover{
+    color:black;
+    background-color: white;
+}
+button#clearButton:hover{
+    color:black;
+    background-color: white;
+}
+label{
+    padding-left:5%;
+}

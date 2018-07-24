@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*{
+    transition: all .25s ease-in-out;
+}
+:root {
+    --bgColor: #1A1423; 
+    --accentColor: #C73E3E;
+    --colorFont: #E1E1E1;
+    --headerFont: 'Oswald', sans-serif;
+    --bodyFont: 'Montserrat', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "about"
+        "projectBanner"
+        "projects"
+        "contactBanner"
+        "contact"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh auto 60vh auto 60vh auto 15vh;
+    padding: 0;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+
+.header{
+    grid-area: header;
+    background: url("../media/Profile.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about{
+    grid-area: about;
+    display: grid;
+    grid-template-areas: 
+        "title title"
+        "about about"
+        "image sub";
+    grid-template-columns: .5fr .5fr;
+    grid-template-rows: 33.33vh;
+    margin-bottom: 5%;
+}
+.about h1{
+    grid-area: title;
+    text-align: center;
+    font-family: var(--headerFont);
+    color: var(--accentColor);
+    text-decoration: underline;
+    font-size: 25pt;
+    font-weight: normal;
+    margin-top:50px;
+}
+.about .info {
+    font-family: var(--bodyFont);
+    grid-area: about;
+    margin: 0 10%;
+    line-height: 40pt;
+    font-size: 20pt;
+    margin-top:-5%;
+}
+.about .subInfo {
+    grid-area: sub;
+    margin-right: 10%;
+    font-family: var(--bodyFont);
+    font-size: 20pt;
+    line-height: 40pt;
+    margin-top:5%;
+    margin-left: -5%;
+}
+.about img{
+    grid-area: image;
+    width:500px;
+    height:500px;
+    margin-top:5%;
+    margin-left: 20%;
+}
+.projectBanner{
+    grid-area: projectBanner;
+    position: relative;
+    background: url("../media/Lighthouse.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.projects{
+    margin: 5% 0;
+    grid-area: projects;
+    display:grid;
+    grid-template-areas: 
+        "title title title"
+        "p1 p2 p3"
+        "p4 p5 p6";
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+}
+.project{
+    width:350px;
+    height:350px;
+    margin: 25px 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    position: relative;
+    background-color: #ffffff;
+}
+.projectTitle{
+    grid-area:title;
+    text-align: center;
+    font-family: var(--headerFont);
+    text-decoration: underline;
+    color:var(--accentColor);
+    font-weight: normal;
+    font-size: 25pt;
+}
+.p1{
+    grid-area: p1;
+}
+.p2{
+    grid-area: p2;
+}
+.p3{
+    grid-area: p3;
+}
+.p4{
+    grid-area: p4;
+}
+.p5{
+    grid-area: p5;
+}
+.p6{
+    grid-area: p6;
+}
+.project h1{
+    text-align: center;
+    position: absolute;
+    font-family: var(--headerFont);
+    color:white;
+    width:100%;
+    bottom:0;
+    margin:0;
+    background-color: var(--bgColor);
+}
+.desc{
+    display:none;
+    position: absolute;
+    left:0;
+    top:-20px;
+    font-family: var(--bodyFont);
+    font-size: 20pt;
+    color:black;
+}
+.skill{
+    display:none;
+    position: absolute;
+    left:0;
+    top:-20px;
+    font-family: var(--bodyFont);
+    font-size: 20pt;
+    color:black;
+}
+.project img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+.project:hover > img{
+    opacity: .25;
+}
+.project:hover > p{
+    display:initial;
+}
+
+
+
+.contactBanner{
+    position: relative;
+    grid-area: contactBanner;
+    background: url("../media/Lights.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact{
+    grid-area: contact;
+}
+.footer{
+    grid-area: footer;
+    background-color: var(--bgColor); 
+    text-align: center;
+}
+
+
+.navBar, .project h1, .project{
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.navBar li{
+    display: inline;
+    font-family: var(--bodyFont);
+    font-size: 25pt;
+    padding: 15px;
+    color: var(--colorFont);
+    cursor: pointer;
+}
+.navBar li:hover{
+    text-decoration: underline;
+    color:var(--accentColor);
+}
+
+#contactForm{
+    margin: 5% 30%;
+}
+#contactForm label{
+    font-size: 20pt;
+    font-family: var(--headerFont);
+    color: var(--accentColor);
+    font-weight: normal;
+}
+.textInput{
+    width: 100%;
+    height:50px;
+    font-size: 25px;
+}
+#submit{
+    width:40%;
+    margin: 0 30%;
+    height:75px;
+    font-size: 25px;
+    border: none;
+    background-color: var(--accentColor);
+    color:white;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: var(--bgColor);
+    border-radius: 10px;
+}
+textarea{
+    width:100%;
+    height:200px;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+
+.banner{
+    background-color: var(--accentColor);
+    color:white;
+    font-family: var(--headerFont);
+    font-size: 18pt;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 25px 50px;
+    transform: translate(-50%, -50%);
+}
+.icon{
+    width:50px;
+    height:50px;
+    cursor: pointer;
+}
+.icon:hover{
+    transform: scale(1.15);
+}
+.footerBar{
+    padding:0;
+}
+.footerBar li{
+    display:inline;
+    padding: 20px;
+}
+.footer p{
+    color:white;
+    font-family: var(--bodyFont);
+}
+
+
+@media screen and (max-width: 1000px) {
+    .about{
+        grid-area: about;
+        display: grid;
+        grid-template-areas: 
+            "title"
+            "about"
+            "image"
+            "sub";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-bottom: 5%;
+    }
+    .about h1{
+        grid-area: title;
+        text-align: center;
+        font-family: var(--headerFont);
+        color: var(--accentColor);
+        font-size: 25pt;
+        font-weight: normal;
+        margin: 50px 0;
+    }
+    .about .info {
+        font-family: var(--bodyFont);
+        grid-area: about;
+        margin: 0 10%;
+        font-size: 15pt;
+    }
+    .about .subInfo {
+        grid-area: sub;
+        font-family: var(--bodyFont);
+        font-size: 15pt;
+        margin:50px 10%;
+    }
+    .about img{
+        width:70%;
+        height:auto;
+        margin: 0 15%;
+    }
+    .projects{
+        grid-template-areas: 
+            "title"
+            "p1"
+            "p2"
+            "p3"
+            "p4"
+            "p5"
+            "p6";
+    }
+    .project{
+        width:70%;
+        height:350px;
+        margin: 25px 15%;
+    }
+    #contactForm{
+        margin: 5% 15%;
+    }
+    .navBar li{
+        font-size: 15pt;
+    }
+    .navBar{
+        margin: 15px 0;
+        padding:0;
+        text-align: center;
+    }
+}

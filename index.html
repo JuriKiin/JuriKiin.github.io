@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>I am Jüri Kiin</title>
+  <meta name="author" content="Juri Kiin">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <section class='header'>
+        <ul class='navBar'>
+            <li onclick='scrollToSection("about")'>ABOUT</li>
+            <li onclick='scrollToSection("projects")'>PROJECTS</li>
+            <li onclick='scrollToSection("contact")'>CONTACT</li>
+        </ul>
+
+        <div class='banner'>
+            <h1>JÜRI KIIN</h1>
+        </div>
+
+    </section>
+    <section class='about'>
+        <h1>ABOUT ME</h1>
+        <p class='info'>Hey there, I'm Jüri Kiin. Mostly I think of myself as a dog person, but professionally I am a game designer, and web developer. I make games, apps, and websites. When I'm not buried in code, you can find me playing soccer, rock climbing, or honestly doing anything outdoors. </p>
+        <img src='media/bridge.png'>
+        <p class='subInfo'> I believe in three things: becoming a better person everyday, learning at least one thing every day, and that your socks should not match the rest of your outfit. Check out my projects, or even shoot me a message if you have any questions! </p>
+    </section>
+    <section class='projectBanner'>
+        <div class='banner'>
+            <h1>PROJECTS</h1>
+        </div>
+    </section>
+    <section class='projects'>
+        <h1 class='projectTitle'>Check out some stuff I've done</h1>
+        <div class='project p1' onclick='loadURL("https://people.rit.edu/jak5125/TrafficLite/")'>
+            <img src='media/TrafficLite.png'>
+            <h1>TrafficLite</h1>
+            <p class='desc'>Web app for traffic alerts and nearby events.<br><br>
+                [HTML5, CSS3, JS, APIs]
+            </p>
+        </div>
+        <div class='project p2' onclick='loadURL("html/KiinStyles/index.html")'>
+            <img src='media/kiinStyles.png'>
+            <h1>KiinStyles</h1>
+            <p class='desc'>Personal CSS Framework.<br><br>
+                [HTML5, CSS3]
+            </p>
+        </div>
+        <div class='project p3' onclick='loadURL("html/WordRain/index.html")'>
+            <img src='media/WordRain.png'>
+            <h1>Word Rain</h1>
+            <p class='desc'>Language & Technology using Voice Recognition. (Chrome only)<br><br>
+                [HTML5, CSS3, JS, Voice Recognition]
+            </p>
+        </div>
+        <div class='project p4' onclick='loadURL("html/drawing.html")'>
+            <img src='media/LetsDraw.png'>
+            <h1>Let's Draw!</h1>
+            <p class='desc'>Web app for drawing pictures.<br><br>
+                [HTML5, CSS3, JS, Canvas]
+            </p>
+        </div>
+        <div class='project p5' onclick='loadURL("html/Grafit/grafit.html")'>
+            <img src='media/Grafit.png'>
+            <h1>Grafit</h1>
+            <p class='desc'>Tool for making bar graphs.<br><br>
+                [HTML5, CSS3, JS, Canvas]
+            </p>
+        </div>
+        <div class='project p6' onclick='loadURL("https://people.rit.edu/jak5125/330/html/Project1/audioProj.html")'>
+            <img src='media/Audio.png'>
+            <h1>Audio Visualizer</h1>
+            <p class='desc'>Audio Visualizer Canvas Demonstration.<br><br>
+                [HTML5, CSS3, JS, Canvas]
+            </p>
+        </div>
+    </section>
+    <section class='contactBanner'>
+        <div class='banner'>
+            <h1>CONTACT ME</h1>
+        </div>
+    </section>
+    <section class='contact'>
+        <form id='contactForm' action='https://formspree.io/me@jurikiin.com' method='POST'>
+            <label>Name</label><br>
+            <input name='name' placeholder='Type Here' type='text' class='textInput'><br>
+            <label>Email</label><br>
+            <input name='email' type='email' placeholder='Type Here' class='textInput'><br>
+            <label>Message</label><br>
+            <textarea name='message' placeholder='Type Here'></textarea><br>
+            <input type='submit' id='submit' value='Send'>
+        </form>
+    </section>
+    <section class='footer'>
+        <ul class='footerBar'>
+            <li><a href='https://www.facebook.com/juri.kiin'><img src='media/facebookbutton.png' class='icon'></a></li>
+            <li><a href='https://www.linkedin.com/in/juri-kiin/'><img src='media/linkedinbutton.png' class='icon'></a></li>
+            <li><a href='https://twitter.com/JuriKiin'><img src='media/twitterbutton.png' class='icon'></a></li>
+            <li><a href='https://github.com/JuriKiin'><img src='media/githubButton.png' class='icon'></a></li>
+        </ul>
+        <p>&copy; 2018 Juri Kiin.</p>
+    </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

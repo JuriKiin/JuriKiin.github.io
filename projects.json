@@ -1,0 +1,119 @@
+{
+    "Comment": "ALL PATHS SHOULD BE EDITED FOR USE IN INDEX.HTML FILE",
+
+    "Projects":[
+
+        {"Name":"Contact",
+            "Desc": "<form id='contactForm' action='https://formspree.io/me@jurikiin.com' method='POST'><label>Name</label><br><input name='name' placeholder='Type Here'><br><label>Email</label><br><input name='email' type='email' placeholder='Type Here'><br><label>Message</label><br><textarea name='message' placeholder='Type Here'></textarea><br><input id='submit' name='submit' type='submit' value='Submit'></form>",
+            "Photos": "",
+            "Video": ""  
+        },
+        {"Name":"Acceptance", 
+            "Desc": "Acceptance is a top-down 2D exploration game made for the #ResistJam. I was team lead, and responsible for planning, designing, programming, and art for the game.",
+            "Video":"media/Acceptance/AcceptanceDemo.mp4",
+            "Thumbnail": "media/Acceptance/A1.png",
+            "Photos": [],
+            "Link": "https://jurikiin.itch.io/acceptance",
+            "Source": "Play it on Itch.io!"
+        },
+        {"Name":"Black Square", 
+            "Desc":"Black Square is a mobile arcade game individually developed for Android. The player uses the accellerometer in their device to tilt the player into as many black squares as they can in 1 minute! This project was coded in C#, and made in the Unity Game Engine. The entire project used Unity primitive cubes.",
+            "Video":"",
+            "Thumbnail": "",
+            "Photos": [ "media/Blacksquare/blacksquare.png",
+                "media/Blacksquare/BS1.png",
+                "media/Blacksquare/BS2.png"
+                      ],
+            "Link": "https://play.google.com/store/apps/details?id=com.JuriKiin.BlackSquare",
+            "Source": "Google Play Store"
+        },
+        {"Name":"Peculiar Dimension", 
+            "Desc":"Peculiar Dimension is a 2D arcade space shooter made in Unity. The purpose of the game was to program physics, as well as collision detection. The game has an interesting twist: Color is a third Dimension. It is developed for desktop, as well as android.",
+            "Video":"", 
+            "Thumbnail": "",
+            "Photos": [ "media/PeculiarDimension/PD2.png",
+                "media/PeculiarDimension/peculiar.png"
+              ],
+            "Link": "https://play.google.com/store/apps/details?id=com.JuriKiin.PeculiarDimension",
+            "Source": "Google Play Store"
+        },
+        {"Name":"Stranger", 
+            "Desc":"Stranger is an independently developed 3D side-scrolling arcade game. You play as Auggie, living on a city block trying to survive for as long as possible.",
+            "Video":"media/Stranger/Stranger_Demo.mp4",
+            "Thumbnail": "media/stranger.png",
+            "Photos": ["media/Stranger/StrangerLogo.png"],
+            "Link":"", 
+            "Source": ""
+        },
+        {"Name":"Reverse", 
+            "Desc":"Reverse is an independently developed 2.5D puzzle game. The character moves automatically, so the goal of the game is to move the level to solve puzzles.<br><br>The core mechanics are done, leaving room for the development of minor additional mechanics. I am currently doing level design and creation.<br>",
+            "Video":"media/Reverse/ReverseEdit.mp4",
+            "Thumbnail": "media/Reverse/reverse.png",
+            "Photos": [],
+            "Link":"", 
+            "Source": ""
+        },
+        {"Name":"Drop Catch!",
+            "Desc":"Drop Catch! is a game made in HTML5 and JS using svg graphics.",
+            "Video":"media/Dropcatch/DropCatchDemo.mp4", 
+            "Thumbnail": "media/Dropcatch/DC1.png",
+            "Photos": [], 
+            "Link":"https://people.rit.edu/jak5125/230/Project3/index.html",
+            "Source": "Play it here!"
+        },
+        {"Name":"Humans VS Zombies",
+            "Desc":"Humans VS Zombies is a Unity simulation designed to simulate a zombie apocalypse. I programmed movement physics, as well as AI forces for the humans and zombies. Zombies seek humans, while humans flee. I also programmed obstacle avoidance, as well as the ability for the user to play as a zombie or a human.",
+            "Video":"", 
+            "Thumbnail": "", 
+            "Photos": ["media/HVZ/hvz1.png",
+                "media/HVZ/hvz2.png"   
+            ],
+            "Link":"https://people.rit.edu/jak5125/230/Project3/index.html",
+            "Source": "Play it here!"
+        },
+        {"Name":"Fridge Magnet Poetry",
+            "Desc":"Fridge Magnet Poetry is an iOS application made using swift and Xcode. Users can create magnet poems by selecting different words from different categories. I enabled users to choose a background image from their photo library, as well as sharing a screenshot of their poem to social media!",
+            "Video":"", 
+            "Thumbnail": "", 
+            "Photos": ["media/FMP/background.png",
+                "media/FMP/delete.png",
+                "media/FMP/settings.png",
+                "media/FMP/share.png"   
+            ],
+            "Link":"https://github.com/JuriKiin/FridgeMagnetPoetry",
+            "Source": "Check it out!"
+        },
+        {"Name":"5050",
+            "Desc":"5050 is an android game made using Unity. It uses simple swipe gestures to check if the circle is black or white. You have 10 seconds to get as many to get as many correct swipes as possible. If you get swipe wrong, the game is over!",
+            "Video":"", 
+            "Thumbnail": "", 
+            "Photos": ["media/5050/5050.png"],
+            "Link":"https://play.google.com/store/apps/details?id=com.jurikiin",
+            "Source": "Google Play Store"
+        },
+        {"Name":"Accelerometer Test",
+            "Desc":"Accelerometer is a demo made using Unity, and an accelerometer built into a mobile device. As the user moves/shakes/tilt the phone, the color changes from a cool blue, to a bright red.",
+            "Video":"", 
+            "Thumbnail": "", 
+            "Photos": [],
+            "Link":"",
+            "Source": ""
+        },
+        {"Name":"Buddy Builder",
+            "Desc":"Buddy builder is a concept application for iOS and android. It is a Swipe-Style application that helps users find and meet people to workout with. Users should swipe with people with similar workout goals, and schedules. The application is currently in design phase.",
+            "Video":"", 
+            "Thumbnail": "", 
+            "Photos": ["media/BuddyBuilder/login.png","media/BuddyBuilder/main_boy.png","media/BuddyBuilder/main_girl.png"],
+            "Link":"",
+            "Source": ""
+        },
+        {"Name":"Morse Code Translator",
+            "Desc":"Morse Code Translator is a C# console application that lets users translate to and from Morese Code. It uses a Dictionary data structure.",
+            "Video":"", 
+            "Thumbnail": "", 
+            "Photos": [],
+            "Link":"",
+            "Source": ""
+        }
+    ]
+}
