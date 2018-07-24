@@ -1,0 +1,689 @@
+/*
+    - KIINSTYLE CSS FRAMEWORK
+    - AUTHOR: JURI KIIN
+    - CONTACT: me@jurikiin.com
+    - LAST UPDATED: 6/27/2018
+*/
+
+/* IMPORTING FONTS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* ------------ Body (body-name) ------------ */
+.body-clear{
+    margin:0;
+    padding:0;
+}
+
+/* ------------ Text Color (colorName) ------------ */
+.grass{
+    color: #20c544;
+}
+.water{
+    color: #206dc5;
+}
+.fire{
+    color: #c53320;
+}
+.rock{
+    color: #5D675B;
+}
+.silk{
+    color:#2A1E5C;
+}
+.coal{
+    color:black;
+}
+.snow{
+    color:white;
+}
+
+/* ------------ Background Color (bg-colorName) ------------ */
+.bg-grass{
+    background-color: #20c544;
+}
+.bg-water{
+    background-color: #206dc5;
+}
+.bg-fire{
+    background-color: #c53320;
+}
+.bg-rock{
+    background-color: #5D675B;
+}
+.bg-silk{
+    background-color:#2A1E5C;
+}
+.bg-coal{
+    background-color:black;
+}
+.bg-snow{
+    background-color:white;
+}
+.bg-water-gradient{
+    background: rgb(42,30,92);
+    background: linear-gradient(90deg, rgba(42,30,92,1) 40%, rgba(32,109,197,1) 100%);
+}
+
+/* ------------ Header (header-) ------------*/
+/* ------------ Footers (footer-) ------------*/
+.footer{
+    margin-top:2%;
+    text-align: center;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.footer-link{
+    color:black;
+}
+/* ------------ Lists (list-type) ------------*/
+.list-clear{
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+.list-item-h{
+    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* ------------ List Items (item-#) ------------*/
+.item-100{
+    width:100%;
+}
+.item-75{
+    width:75%;
+}
+.item-50{
+    width:50%;
+}
+.item-25{
+    width:25%;
+}
+.item-20{
+    width:20%;
+}
+.item-10{
+    width:10%;
+}
+.item-auto{
+    width:auto;
+}
+/* ------------ Alignment (align-) ------------*/
+.align-center{
+    text-align: center;
+}
+.align-left{
+    text-align:left;
+}
+.align-right{
+    text-align:right;
+}
+
+/* ------------ MARGINS (margin-(sides)-# ------------*/
+/* 0 */
+.margin-0{
+    margin:0;
+}
+.margin-top-0{
+    margin-top:0;
+}
+.margin-left-0{
+    margin-left:0;
+}
+.margin-bottom-0{
+    margin-bottom: 0;
+}
+.margin-right-0{
+    margin-right:0;
+}
+/* 5% */
+.margin-5{
+    margin:5%;
+}
+.margin-top-5{
+    margin-top:5%;
+}
+.margin-left-5{
+    margin-left:5%;
+}
+.margin-bottom-5{
+    margin-bottom: 5%;
+}
+.margin-right-5{
+    margin-right:5%;
+}
+/* 10% */
+.margin-10{
+    margin:10%;
+}
+.margin-top-10{
+    margin-top:10%;
+}
+.margin-left-10{
+    margin-left:10%;
+}
+.margin-bottom-10{
+    margin-bottom: 10%;
+}
+.margin-right-10{
+    margin-right:10%;
+}
+/* 20% */
+.margin-20{
+    margin:20%;
+}
+.margin-top-20{
+    margin-top:20%;
+}
+.margin-left-20{
+    margin-left:20%;
+}
+.margin-bottom-20{
+    margin-bottom: 20%;
+}
+.margin-right-20{
+    margin-right:20%;
+}
+/* 25% */
+.margin-25{
+    margin:25%;
+}
+.margin-top-25{
+    margin-top:25%;
+}
+.margin-left-25{
+    margin-left:25%;
+}
+.margin-bottom-25{
+    margin-bottom: 25%;
+}
+.margin-right-25{
+    margin-right:25%;
+}
+/* 50% */
+.margin-50{
+    margin:50%;
+}
+.margin-top-50{
+    margin-top:50%;
+}
+.margin-left-50{
+    margin-left:50%;
+}
+.margin-bottom-50{
+    margin-bottom: 50%;
+}
+.margin-right-50{
+    margin-right:50%;
+}
+/* 75% */
+.margin-75{
+    margin:75%;
+}
+.margin-top-75{
+    margin-top:75%;
+}
+.margin-left-75{
+    margin-left:75%;
+}
+.margin-bottom-75{
+    margin-bottom: 75%;
+}
+.margin-right-75{
+    margin-right:75%;
+}
+/* 100% */
+.margin-100{
+    margin:100%;
+}
+.margin-top-100{
+    margin-top:100%;
+}
+.margin-left-100{
+    margin-left:100%;
+}
+.margin-bottom-100{
+    margin-bottom: 100%;
+}
+.margin-right-100{
+    margin-right:100%;
+}
+/* 10px */
+.margin-10p{
+    margin:10px;
+}
+.margin-top-10p{
+    margin-top:10px;
+}
+.margin-left-10p{
+    margin-left:10px;
+}
+.margin-bottom-10p{
+    margin-bottom: 10px;
+}
+.margin-right-10p{
+    margin-right:10px;
+}
+/* ------------ PADDING (pad-(sides)-# ------------*/
+.pad-0{
+    padding:0;
+}
+/* 10px */
+.pad-10p{
+    padding:10px;
+}
+.pad-top-10p{
+    padding-top:10px;
+}
+.pad-left-10p{
+    padding-left:10px;
+}
+.pad-bottom-10p{
+    padding-bottom: 10px;
+}
+.pad-right-10p{
+    padding-right:10px;
+}
+/* 20px */
+.pad-20p{
+    padding:20px;
+}
+.pad-top-20p{
+    padding-top:20px;
+}
+.pad-left-20p{
+    padding-left:20px;
+}
+.pad-bottom-20p{
+    padding-bottom:20px;
+}
+.pad-right-20p{
+    padding-right:20px;
+}
+
+/* 5% */
+.pad-5{
+    padding:5%;
+}
+.pad-top-5{
+    padding-top:5%;
+}
+.pad-left-5{
+    padding-left:5%;
+}
+.pad-bottom-5{
+    padding-bottom: 5%;
+}
+.pad-right-5{
+    padding-right:5%;
+}
+/* 10% */
+.pad-10{
+    padding:10%;
+}
+.pad-top-10{
+    padding-top:10%;
+}
+.pad-left-10{
+    padding-left:10%;
+}
+.pad-bottom-10{
+    padding-bottom: 10%;
+}
+.pad-right-10{
+    padding-right:10%;
+}
+/* 20% */
+.pad-20{
+    padding:20%;
+}
+.pad-top-20{
+    padding-top:20%;
+}
+.pad-left-20{
+    padding-left:20%;
+}
+.pad-bottom-20{
+    padding-bottom: 20%;
+}
+.pad-right-20{
+    padding-right:20%;
+}
+/* 25% */
+.pad-25{
+    padding:25%;
+}
+.pad-top-25{
+    padding-top:25%;
+}
+.pad-left-25{
+    padding-left:25%;
+}
+.pad-bottom-25{
+    padding-bottom: 25%;
+}
+.pad-right-25{
+    padding-right:25%;
+}
+/* 50% */
+.pad-50{
+    padding:50%;
+}
+.pad-top-50{
+    padding-top:50%;
+}
+.pad-left-50{
+    padding-left:50%;
+}
+.pad-bottom-50{
+    padding-bottom: 50%;
+}
+.pad-right-50{
+    padding-right:50%;
+}
+/* 75% */
+.pad-75{
+    padding:75%;
+}
+.pad-top-75{
+    padding-top:75%;
+}
+.pad-left-75{
+    padding-left:75%;
+}
+.pad-bottom-75{
+    padding-bottom: 75%;
+}
+.pad-right-75{
+    padding-right:75%;
+}
+/* 100% */
+.pad-100{
+    padding:100%;
+}
+.pad-top-100{
+    padding-top:100%;
+}
+.pad-left-100{
+    padding-left:100%;
+}
+.pad-bottom-100{
+    padding-bottom: 100%;
+}
+.pad-right-100{
+    padding-right:100%;
+}
+/* ------------ Font Size (font-sz)------------*/
+.font-xxl{
+    font-size: 100px;
+}
+.font-xl{
+    font-size:75px;
+}
+.font-lg{
+    font-size: 50px;
+}
+.font-md{
+    font-size: 25px;
+}
+.font-sm{
+    font-size: 12px;
+}
+.font-xs{
+    font-size: 8px;
+}
+
+/* ------------ Font Types (font-nm)------------*/
+.font-header{
+    font-family: 'Open Sans', sans-serif;
+}
+.font-text{
+    font-family: 'Raleway', sans-serif;
+}
+.font-default{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 750px) {
+.font-xxl{
+    font-size: 50px;
+}
+.font-xl{
+    font-size:40px;
+}
+.font-lg{
+    font-size: 25px;
+}
+.font-md{
+    font-size: 15px;
+}
+
+}
+
+/* ------------ Columns  (CURRENTLY UNSUPPORTED) ------------*/
+[class*='col-'] {
+    float: left; 
+    min-height: 1px;
+}
+
+.col-1{
+    width:100%;
+}
+.col-2{
+    width:50%;
+}
+.col-3{
+    width:33.33%;
+}
+.col-4{
+    width:25%;
+}
+.col-5{
+    width:20%;
+}
+.col-6{
+    width:16.66%;
+}
+.col-8{
+    width:12.5%;
+}
+.col-10{
+    width:10%;
+}
+.col-12{
+    width:8%;
+}
+/* ------------ Height (height-#) ------------*/
+.height-0{
+    height:0;
+}
+.height-5{
+    height:5px;
+}
+.height-10{
+    height:10px;
+}
+.height-20{
+    height:20px;
+}
+.height-25{
+    height:25px;
+}
+.height-50{
+    height:50px;
+}
+.height-75{
+    height:75px;
+}
+.height-100{
+    height:100px;
+}
+.height-150{
+    height: 150px;
+}
+.height-auto{
+    height:auto;
+}
+
+/* ------------ Line Height (l-height-#) ------------*/
+.l-height-0{
+    line-height:0;
+}
+.l-height-5{
+    line-height:5px;
+}
+.l-height-10{
+    line-height:10px;
+}
+.l-height-20{
+    line-height:20px;
+}
+.l-height-25{
+    line-height:25px;
+}
+.l-height-50{
+    line-height:50px;
+}
+.l-height-75{
+    line-height:75px;
+}
+.l-height-100{
+    line-height:100px;
+}
+.l-height-150{
+    line-height: 150px;
+}
+
+@media screen and (max-width: 750px) {
+.l-height-100{
+    line-height: 50px;
+}
+
+}
+
+/* ------------ Display (d-type)------------*/
+.d-inline{
+    display: inline;
+}
+.d-block{
+    display: block;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.d-none{
+    display: none;
+}
+
+/* ------------ Floats (f-direction) ------------*/
+.f-left{
+    float: left;
+}
+.f-right{
+    float:right;
+}
+/* ----------- Links ------------*/
+[class*='link'] {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.link{
+    text-decoration: underline;
+}
+.link-clear{
+    text-decoration: none;
+}
+.link-hover{
+    text-decoration: none;
+}
+.link-hover:hover{
+    color:#2A1E5C;
+    text-decoration: underline;
+}
+.link-hover-subtle{
+    text-decoration: none;
+}
+.link-hover-subtle:hover{
+    text-decoration: underline;
+}
+
+/* ----------- Text Decoration ------------*/
+.underline{
+    text-decoration: underline;
+}
+
+/* ----------- Overflow ------------*/
+.o-scroll{
+    overflow: scroll;
+}
+.o-hidden{
+    overflow: hidden;
+}
+.o-auto{
+    overflow:auto;
+}
+.o-x{
+    overflow-x: scroll;
+}
+
+/* ----------- Position ------------*/
+.absolute{
+    position:absolute;
+}
+.fixed{
+    position:fixed;
+}
+
+/* ----------- Button ------------*/
+.button{
+    width:25%;
+    height:75px;
+    margin-left:37.5%;
+    margin-right:37.5%;
+    background-color: transparent;
+    border: 1px solid #c53320;
+    transition:all .25s ease-in-out;
+}
+.button:hover{
+    background-color: #c53320;
+    color:white;
+    cursor:pointer;
+    border-radius: 10px;
+}
+
+
+/* ------------ VH (vh-) ------------*/
+.vh-full{
+    height: 100vh;
+}
+
+/* ------------ HR (break-) ------------*/
+.break{
+    margin: 5% 10%;
+    border: 1px solid #5D675B;
+}
+
+/* ------------ Code (For displaying code) ------------*/
+.code{
+    background-color: #d9dce0;
+    line-height: 50px;
+    white-space: nowrap;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+
+@media screen and (max-width: 750px) {
+    .button{
+        width:50%;
+        margin-left:25%;
+        margin-right:25%;
+    }
+    .code{
+        line-height: 15pt;
+        font-size: 10pt;
+    }
+}
