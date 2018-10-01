@@ -44,7 +44,7 @@ body{
         "title title"
         "about about"
         "image sub";
-    grid-template-columns: .5fr .5fr;
+    grid-template-columns: .6fr .4fr;
     grid-template-rows: 33.33vh;
     margin-bottom: 5%;
 }
@@ -68,12 +68,11 @@ body{
 }
 .about .subInfo {
     grid-area: sub;
-    margin-right: 10%;
     font-family: var(--bodyFont);
     font-size: 20pt;
     line-height: 40pt;
     margin-top:5%;
-    margin-left: -5%;
+    margin-right: 10%;
 }
 .about img{
     grid-area: image;
@@ -103,8 +102,8 @@ body{
     justify-content: center;
 }
 .project{
-    width:350px;
-    height:350px;
+    width:300px;
+    height:300px;
     margin: 25px 25px;
     background-position: center;
     background-repeat: no-repeat;
@@ -266,6 +265,8 @@ textarea{
     position: absolute;
     top: 50%;
     left: 50%;
+    width:15%;
+    text-align: center;
     padding: 25px 50px;
     transform: translate(-50%, -50%);
 }
@@ -290,7 +291,7 @@ textarea{
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     .about{
         grid-area: about;
         display: grid;
@@ -348,11 +349,14 @@ textarea{
         margin: 5% 15%;
     }
     .navBar li{
-        font-size: 15pt;
+        font-size: 16pt;
     }
     .navBar{
         margin: 15px 0;
         padding:0;
         text-align: center;
+    }
+    .banner{
+        width:20%;
     }
 }
