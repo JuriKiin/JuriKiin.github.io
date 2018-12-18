@@ -338,7 +338,7 @@ textarea{
             "p4"
             "p5"
             "p6";
-        grid-template-rows: 100px 350px 350px;
+        grid-template-rows: 100px 350px;
     }
     .project{
         width:90%;
