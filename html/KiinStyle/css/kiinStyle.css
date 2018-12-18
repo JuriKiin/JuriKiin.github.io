@@ -447,22 +447,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 750px) {
-.font-xxl{
-    font-size: 50px;
-}
-.font-xl{
-    font-size:40px;
-}
-.font-lg{
-    font-size: 25px;
-}
-.font-md{
-    font-size: 15px;
-}
-
-}
-
 /* ------------ Columns  (CURRENTLY UNSUPPORTED) ------------*/
 [class*='col-'] {
     float: left; 
@@ -567,13 +551,6 @@
 }
 .l-height-150{
     line-height: 150px;
-}
-
-@media screen and (max-width: 750px) {
-.l-height-100{
-    line-height: 50px;
-}
-
 }
 
 /* ------------ Display (d-type)------------*/
@@ -813,5 +790,27 @@
     .code{
         line-height: 15pt;
         font-size: 10pt;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .font-xxl{
+        font-size: 50px;
+    }
+    .font-xl{
+        font-size:40px;
+    }
+    .font-lg{
+        font-size: 25px;
+    }
+    .font-md{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    .l-height-100{
+        line-height: 50px;
     }
 }

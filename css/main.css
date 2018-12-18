@@ -338,11 +338,12 @@ textarea{
             "p4"
             "p5"
             "p6";
+        grid-template-rows: 100px 350px;
     }
     .project{
-        width:70%;
+        width:90%;
         height:350px;
-        margin: 25px 15%;
+        margin: 25px 5%;
     }
     #contactForm{
         margin: 5% 15%;
