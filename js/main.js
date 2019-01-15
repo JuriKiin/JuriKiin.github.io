@@ -37,7 +37,7 @@ function init() {
   requestAnimationFrame(welcomeSpeech);
 }
 
-let sayings = ['Hello, My name is Juri.', 'I am a web developer.', 'I like to make cool things!', 'Check out my projects!'];
+let sayings = ['Hi there!','My name is Jüri.', 'I am a web developer.', 'I like to make cool things!', 'Check out my projects!'];
 let phrase = 0;
 let curPhrase = '';
 let letterCount = 0;
