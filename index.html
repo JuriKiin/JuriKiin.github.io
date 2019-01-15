@@ -9,18 +9,13 @@
 </head>
 
 <body>
-
     <section class='header'>
         <ul class='navBar'>
             <li onclick='scrollToSection("about")'>ABOUT</li>
             <li onclick='scrollToSection("projects")'>PROJECTS</li>
             <li onclick='scrollToSection("contact")'>CONTACT</li>
         </ul>
-
-        <div class='banner'>
-            <h1>JÜRI KIIN</h1>
-        </div>
-
+        <h1 id='welcomeSpeech'></h1><span class='blinking'>|</span>
     </section>
     <section class='about'>
         <h1>ABOUT ME</h1>
@@ -103,6 +98,8 @@
         </ul>
         <p>&copy; 2018 Juri Kiin.</p>
     </section>
+
+    <button onclick="scrollToTop()" id="scrollToTop">Back to Top</button>
 
   <script src="js/main.js"></script>
 </body>

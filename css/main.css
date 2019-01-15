@@ -4,10 +4,13 @@
 *{
     transition: all .25s ease-in-out;
 }
+html{
+    scroll-behavior: smooth;
+}
 :root {
     --bgColor: #1A1423; 
     --accentColor: #C73E3E;
-    --colorFont: #E1E1E1;
+    --colorFont: #ffffff;
     --headerFont: 'Oswald', sans-serif;
     --bodyFont: 'Montserrat', sans-serif;
 }
@@ -23,7 +26,7 @@ body{
         "contact"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh auto 60vh auto 60vh auto 15vh;
+    grid-template-rows: 60vh auto 60vh auto 60vh auto 15vh;
     padding: 0;
     margin: 0;
     background-color: #f3f3f3;
@@ -31,12 +34,25 @@ body{
 
 .header{
     grid-area: header;
-    background: url("../media/Profile.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color:#FABC3C;
 }
+
+#welcomeSpeech{
+    text-align: center;
+    font-family: var(--headerFont);
+    font-size: 50px;
+    color: #F19143;
+    margin-top:10%;
+}
+.blinking{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #F19143;    }
+    50%{    color: transparent; }
+    100%{   color: #F19143;    }
+}
+
 .about{
     grid-area: about;
     display: grid;
@@ -84,11 +100,7 @@ body{
 .projectBanner{
     grid-area: projectBanner;
     position: relative;
-    background: url("../media/Lighthouse.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #A5AE9E;
 } 
 .projects{
     margin: 5% 0;
@@ -185,11 +197,7 @@ body{
 .contactBanner{
     position: relative;
     grid-area: contactBanner;
-    background: url("../media/Lights.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #73648A;
 }
 .contact{
     grid-area: contact;
@@ -218,7 +226,7 @@ body{
 }
 .navBar li:hover{
     text-decoration: underline;
-    color:var(--accentColor);
+    color:black;
 }
 
 #contactForm{
@@ -256,7 +264,6 @@ textarea{
     margin-bottom: 50px;
 }
 
-
 .banner{
     background-color: var(--accentColor);
     color:white;
@@ -288,6 +295,24 @@ textarea{
     color:white;
     font-family: var(--bodyFont);
 }
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 100;
+    background-color: #283845;
+    border:none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding:15px;
+  }
+  
+  #scrollToTop:hover {
+    border-radius: 10px;
+  }
 
 
 @media screen and (max-width: 1100px) {
@@ -356,4 +381,11 @@ textarea{
         padding:0;
         text-align: center;
     }
+
+
+    #welcomeSpeech {
+        margin: 10%;
+        margin-top:15%;
+    }
+
 }
