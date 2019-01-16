@@ -314,8 +314,7 @@ textarea{
     border-radius: 10px;
   }
 
-
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
     .about{
         grid-area: about;
         display: grid;
@@ -366,9 +365,9 @@ textarea{
         grid-template-rows: 100px 350px;
     }
     .project{
-        width:90%;
-        height:350px;
-        margin: 25px 5%;
+        width:70%;
+        height:250px;
+        margin: 25px 15%;
     }
     #contactForm{
         margin: 5% 15%;
@@ -381,7 +380,6 @@ textarea{
         padding:0;
         text-align: center;
     }
-
 
     #welcomeSpeech {
         margin: 10%;
