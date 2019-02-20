@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" type="image/png" href="media/icon.png"/>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <section class='header'>
-        <ul class='navBar'>
+        <ul class='navBar' data-aos="fade-right">
             <li onclick='scrollToSection("about")'>ABOUT</li>
             <li onclick='scrollToSection("projects")'>PROJECTS</li>
             <li onclick='scrollToSection("contact")'>CONTACT</li>
@@ -20,54 +22,54 @@
         <h1 id='welcomeSpeech'></h1><span class='blinking'>|</span>
     </section>
     <section class='about'>
-        <h1>ABOUT ME</h1>
+        <h1>ABOUT ME</h1 data-aos="flip-right">
         <p class='info'>Hey there, I'm Jüri Kiin. Mostly I think of myself as a dog person, but professionally I am a web developer. I make websites, apps, and games. When I'm not buried in code, you can find me playing soccer, snowboarding rock climbing, or honestly doing anything outdoors. </p>
-        <img src='media/bridge.png'>
+        <img src='media/bridge.png' data-aos="zoom-out">
         <p class='subInfo'> I believe in three things: becoming a better person everyday, learning at least one thing every day, and that your socks should not match the rest of your outfit. Check out my projects, or even shoot me a message if you have any questions! </p>
     </section>
-    <section class='projectBanner'>
+    <section class='projectBanner' data-aos="zoom-out">
         <div class='banner'>
             <h1>PROJECTS</h1>
         </div>
     </section>
     <section class='projects'>
         <h1 class='projectTitle'>Check out some stuff I've done</h1>
-        <div class='project p1' onclick='loadURL("https://youtu.be/4rhb18jM30Q")'>
+        <div class='project p1' onclick='loadURL("https://youtu.be/4rhb18jM30Q")' data-aos="fade-down-right">
             <img src='media/breathefree.png'>
             <h1>BreatheFree</h1>
             <p class='desc'>Cordova Application for looking at global Air Quality<br><br>
                 [HTML5, CSS3, JS, APIs]
             </p>
         </div>
-        <div class='project p2' onclick='loadURL("html/KiinStyle/kiinStyles.html")'>
+        <div class='project p2' onclick='loadURL("html/KiinStyle/kiinStyles.html")' data-aos="fade-down">
             <img src='media/kiinStyles.png'>
             <h1>KiinStyles</h1>
             <p class='desc'>Personal CSS Framework.<br><br>
                 [HTML5, CSS3]
             </p>
         </div>
-        <div class='project p3' onclick='loadURL("html/Audio/index.html")'>
+        <div class='project p3' onclick='loadURL("html/Audio/index.html")' data-aos="fade-down-left">
             <img src='media/Audio.png'>
             <h1>Audio Visualizer</h1>
             <p class='desc'>Audio Visualizer using Three.js and WebAudio API (Chrome Only)<br><br>
                 [HTML5, CSS3, JS, Three.js, WebAudio API]
             </p>
         </div>
-        <div class='project p4' onclick='loadURL("html/WordRain/index.html")'>
+        <div class='project p4' onclick='loadURL("html/WordRain/index.html")' data-aos="fade-up-right">
             <img src='media/WordRain.png'>
             <h1>Word Rain</h1>
             <p class='desc'>Language & Technology using Voice Recognition. (Chrome only)<br><br>
                 [HTML5, CSS3, JS, Voice Recognition]
             </p>
         </div>
-        <div class='project p5' onclick='loadURL("https://www.youtube.com/watch?v=p_dsvOnxeDE")'>
+        <div class='project p5' onclick='loadURL("https://www.youtube.com/watch?v=p_dsvOnxeDE")' data-aos="fade-up">
             <img src='media/bakersdozen.png'>
             <h1>Bakers Dozen</h1>
             <p class='desc'>Native iOS app for creating and managing custom recipes.<br><br>
                 [Swift, Sketch]
             </p>
         </div>
-        <div class='project p6' onclick='loadURL("https://invis.io/9PO8YFIA8XY")'>
+        <div class='project p6' onclick='loadURL("https://invis.io/9PO8YFIA8XY")' data-aos="fade-up-left">
             <img src='media/explor.png'>
             <h1>Explor</h1>
             <p class='desc'>Explor is a design project for creating and sharing trips and vacations.<br><br>
@@ -75,13 +77,13 @@
             </p>
         </div>
     </section>
-    <section class='contactBanner'>
+    <section class='contactBanner' data-aos="zoom-out">
         <div class='banner'>
             <h1>CONTACT ME</h1>
         </div>
     </section>
     <section class='contact'>
-        <form id='contactForm' action='https://formspree.io/hi@jurikiin.com' method='POST'>
+        <form id='contactForm' action='https://formspree.io/hi@jurikiin.com' method='POST' data-aos="fade-up">
             <label>Name</label><br>
             <input name='name' placeholder='Type Here' type='text' class='textInput'><br>
             <label>Email</label><br>
@@ -97,12 +99,13 @@
             <li><a href='https://www.linkedin.com/in/juri-kiin/'><img src='media/linkedinbutton.png' class='icon'></a></li>
             <li><a href='https://twitter.com/JuriKiin'><img src='media/twitterbutton.png' class='icon'></a></li>
             <li><a href='https://github.com/JuriKiin'><img src='media/githubButton.png' class='icon'></a></li>
+            <li><a href='https://codepen.io/jurikiin/'><img src='media/codepen-logo.png' class='icon'></a></li>
         </ul>
         <p>&copy; 2018 Juri Kiin.</p>
     </section>
 
     <button onclick="scrollToTop()" id="scrollToTop">Back to Top</button>
-
-  <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

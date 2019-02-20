@@ -35,6 +35,7 @@ window.onload = init;
 
 function init() {
   requestAnimationFrame(welcomeSpeech);
+  AOS.init();
 }
 
 let sayings = ['Hi there!','My name is Jüri.', 'I am a web developer.', 'I like to make cool things!', 'Check out my projects!'];
