@@ -237,6 +237,7 @@ textarea{
     grid-template-rows: auto;
     justify-content: center;
     justify-items: center;
+    margin: 0 30%;
 }
 .footerBar li{
     display:inline;
