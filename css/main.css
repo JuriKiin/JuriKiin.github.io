@@ -36,6 +36,11 @@ body{
     margin: 0;
     padding:0;
     padding-top: 25px;
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
 }
 .navBar li{
     text-decoration: underline;;
@@ -320,7 +325,7 @@ textarea{
         margin: 5% 15%;
     }
     .navBar li{
-        font-size: 15pt;
+        font-size: 8pt;
     }
     .navBar{
         padding:15px 0;
