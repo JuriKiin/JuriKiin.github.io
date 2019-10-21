@@ -139,6 +139,12 @@ body{
 .project:hover > p{
     display:initial;
 }
+.viewCode{
+    text-align: center;
+    font-family: var(--bodyFont);
+    margin:0;
+    font-size: 12pt;
+}
 
 .aboutBanner{
     margin-top:-50px;
